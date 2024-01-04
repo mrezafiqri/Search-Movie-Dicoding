@@ -3,7 +3,15 @@ module.exports = {
   content: [],
   purge: ['./src/**/*.html', './src/**/*.js'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "inter": ["inter"]
+      },
+      colors: {
+        'dark' : '#21252b',
+        'primary' : '#282c34',
+      }
+    },
   },
   plugins: [],
 }
