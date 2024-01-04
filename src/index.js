@@ -1,7 +1,5 @@
+import "regenerator-runtime";
 import "./styles/index.css";
+import main from "./script/view/main.js";
 
-const main = () => {
-  console.log('Code with Reza, Hello World!!! bla');
-};
-
-main();
+document.addEventListener('DOMContentLoaded', main);
