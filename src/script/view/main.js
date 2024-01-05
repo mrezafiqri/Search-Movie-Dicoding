@@ -1,15 +1,21 @@
+import '../component/header-bar.js';
 import GetData from "../data/get-data.js";
 import GetDetailData from "../data/get-details-data.js";
 
 
 const main = async () => {
-  console.log('Code with Reza, Hello World!!! 123');
-  const result = await GetData.searchMovie('avengers');
-  // const movie_id = dataset.id;
-  const detail = await GetDetailData.detailMovie('299536');
+  // const result = await GetData.searchMovie('avengers');
+  
+  // function getGenresId () {
+  //   result.forEach( async (movie) => {
+  //     const detail = await GetDetailData.detailMovie(movie.id);
+  //     console.log(detail)
+  //   });
+  // }
 
-  console.log(result);
-  console.log(detail)
+  // console.log(result);
+  // getGenresId()
+
 };
 
 export default main;
