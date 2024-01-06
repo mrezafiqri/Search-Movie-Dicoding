@@ -23,7 +23,7 @@ class HeaderBar extends HTMLElement {
         </a>
 
         <div id="search-container" class="nav-search absolute container m-auto flex justify-end pr-4 mt-4 z-10 gap-2 top-full right-0 md:pr-0 lg:w-1/2">
-          <input type="search" placeholder="Search Movie..." id="searchElement" class="w-1/2 p-2 rounded-md text-slate-600 font-inter focus:outline-none focus:ring-cyan-600 focus:ring-2 focus:border-cyan-600">
+          <input type="search" placeholder="Search Movie..." id="searchElement" class="w-1/2 px-2 py-1 rounded-md text-slate-600 font-inter md:p-2 focus:outline-none focus:ring-cyan-600 focus:ring-2 focus:border-cyan-600">
           <button class="text-slate-300 bg-dark px-4 rounded-md border-slate-500 border font-inter text-base font-[600] hover:text-slate-100 hover:bg-primary lg:text-lg lg:px-6" id="btnSearchElement" type="submit">Search</button>
       </nav>
     </header>
