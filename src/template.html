@@ -11,15 +11,33 @@
 
   <div id="movieContainer" class="container mt-36 text-slate-200 grid grid-cols-2 gap-4 w-full m-auto px-4 relative md:w-11/12 md:px-0 md:grid-cols-3 lg:grid-cols-5 lg:w-10/12">
 
-    <h1 class="absolute pb-1 -top-14 left-1/2 -translate-x-1/2 text-2xl font-inter font-[600] border-b-4 border-cyan-600 md:text-3xl">Avengers</h1>
+    <h1 class="absolute pb-1 -top-14 left-1/2 -translate-x-1/2 text-2xl font-inter font-[600] border-b-4 border-cyan-600 md:text-3xl">Fast Furious</h1>
 
     <a href="#" id="movieElement" class="relative flex flex-col rounded-md overflow-hidden border border-cyan-800 shadow-lg shadow-cyan-800 hover:shadow-xl hover:shadow-cyan-900 duration-300 group">
       <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg" alt="" class="object-cover object-center group-hover:brightness-50 group-hover:blur-sm duration-300">
       <h2 class="line-clamp-1 py-1 px-2 text-sm font-inter font-[700] group-hover:text-cyan-500 duration-300 md:text-xl md:pt-2 md:px-4">Fast & Furious X</h2>
-      <p class="text-slate-400 px-2 pb-2 font-inter text-xs font-[300] md:text-base md:px-4 md:pb-3">2019-08-02</p>
+      <p class="text-slate-400 px-2 pb-2 font-inter text-xs font-[300] md:text-base md:px-4 md:pb-3">2019-08-03</p>
       <p class="absolute top-1/2 -translate-y-6 left-1/2 -translate-x-1/2 text-xs font-inter font-[400] text-slate-300/80 invisible group-hover:visible group-hover:duration-300 md:text-base md:-translate-y-10">See Detail</p>
     </a>
-  
+
+  </div>
+
+  <div id="modal-container" class="modal absolute h-fit w-full flex justify-center items-center top-0 left-0 right-0 mx-auto bg-black/70 md:h-full md:w-full">
+
+    <div class="container relative w-2/3 mt-24 mx-4 bg-dark grid grid-cols-1 border border-cyan-800 shadow-lg shadow-cyan-800 cursor-default md:grid-cols-3 md:w-[85%] lg:w-[60%] lg:mt-20">
+      <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg" alt="" class="object-cover object-center">
+      <div class="md:col-span-2 md:p-4">
+        <h2 class="line-clamp-1 py-1 pt-2 px-4 text-base text-slate-200 font-inter font-[700] md:text-xl md:pt-2 md:px-4 md:col-span-2">Fast & Furious X</h2>
+        <p class="text-slate-400 px-4 py-2 font-inter text-xs font-[300] md:text-base md:px-4 md:pb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero dolore commodi dignissimos ad harum accusantium illo ut, enim corporis quam ipsam reiciendis sit nulla alias omnis earum repellendus praesentium nisi!</p>
+        <p class="text-slate-400 px-4 pb-2 font-inter text-xs font-[300] md:text-base md:px-4 md:pb-3">Action, Thriller, Horror</p>
+        <p class="text-slate-400 text-right px-4 pb-2 font-inter text-xs font-[300] md:text-base md:px-4 md:pb-3 lg:text-left">2019-08-02</p>
+      </div>
+      <a id="close-modal" href="#" class="absolute opacity-80 -top-4 -right-8 md:text-2xl md:-right-10 md:-top-8">
+        ❌
+      </a>
+    </div>
+
+
   </div>
   
 </body>

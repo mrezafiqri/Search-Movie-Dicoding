@@ -16,4 +16,12 @@ body {
   .nav-search.active {
     @apply visible;
   }
+
+  .modal {
+    @apply invisible;
+  }
+
+  .modal.active {
+    @apply visible;
+  }
 }
