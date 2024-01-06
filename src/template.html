@@ -8,10 +8,19 @@
 <body>
 
   <header-bar></header-bar>
+
+  <div id="movieContainer" class="container mt-36 text-slate-200 grid grid-cols-2 gap-4 w-full m-auto px-4 relative md:w-11/12 md:px-0 md:grid-cols-3 lg:grid-cols-5 lg:w-10/12">
+
+    <h1 class="absolute pb-1 -top-14 left-1/2 -translate-x-1/2 text-2xl font-inter font-[600] border-b-4 border-cyan-600 md:text-3xl">Avengers</h1>
+
+    <a href="#" id="movieElement" class="relative flex flex-col rounded-md overflow-hidden border border-cyan-800 shadow-lg shadow-cyan-800 hover:shadow-xl hover:shadow-cyan-900 duration-300 group">
+      <img src="https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg" alt="" class="object-cover object-center group-hover:brightness-50 group-hover:blur-sm duration-300">
+      <h2 class="line-clamp-1 py-1 px-2 text-sm font-inter font-[700] group-hover:text-cyan-500 duration-300 md:text-xl md:pt-2 md:px-4">Fast & Furious X</h2>
+      <p class="text-slate-400 px-2 pb-2 font-inter text-xs font-[300] md:text-base md:px-4 md:pb-3">2019-08-09</p>
+      <p class="absolute top-1/2 -translate-y-6 left-1/2 -translate-x-1/2 text-sm font-inter font-[400] text-slate-300/80 invisible group-hover:visible group-hover:duration-300 md:text-base md:-translate-y-10">See Detail</p>
+    </a>
   
-  <!-- <div id="search-container" class="container w-full m-auto flex justify-center gap-4 mt-24 bg-yellow-300">
-    <input type="search" placeholder="Search Movie" id="searchElement">
-    <button id="btnSearchElement" type="submit">Search</button>
-  </div> -->
+  </div>
+  
 </body>
 </html>
