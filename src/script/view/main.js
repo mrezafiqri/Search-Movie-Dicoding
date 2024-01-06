@@ -37,7 +37,7 @@ const main = async () => {
 
   searchMovieElement.clickEvent = onButtonSearchClicked;
 
-  console.log('COde with Reza 123')
+  console.log('COde with Reza 12233')
 };
 
 export default main;
