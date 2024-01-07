@@ -39,6 +39,11 @@ class HeaderBar extends HTMLElement {
 
     this.querySelector('#btnSearchElement').addEventListener('click', this._clickEvent);
 
+    this.querySelector('#btnSearchElement').addEventListener('click', () => {
+      const searchContainer = this.querySelector('#search-container');
+      searchContainer.classList.remove('active');
+    });
+
     this.addEventListener('click', (e) => {
       const toggleSearch = this.querySelector('#toggleSearchElement');
       const searchContainer = this.querySelector('#search-container');

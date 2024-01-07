@@ -15,14 +15,11 @@ class GetData {
         return response.data;
       })
       .then(responseJson => {
-        if (responseJson.results.length === 0) {
-          throw new Error('Movie not found!');
+        if (responseJson.results.length <= 3) {
+          return Promise.reject(`${keyword} not found!`);
         } else {
-          return responseJson.results;
+          return Promise.resolve(responseJson.results);
         };
-      })
-      .catch(error => {
-        console.log(error.message);
       })
   };
 };
