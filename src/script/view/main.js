@@ -20,7 +20,7 @@ const main = async () => {
 
       renderResult(result)
       
-      console.log(result);
+      // console.log(result);
       // console.log(getGenresId);
     } catch (message) {
       fallbackResult(message)

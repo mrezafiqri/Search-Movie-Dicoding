@@ -18,9 +18,14 @@ class GetData {
         if (responseJson.results.length <= 3) {
           return Promise.reject(`${keyword} not found!`);
         } else {
-          return Promise.resolve(responseJson.results);
+          Object.filter = (obj, predict) => 
+            Object.fromEntries(Object.entries(obj).filter(([key, value]) => predict(value)));
+          
+          const filtersMovie = Object.filter(responseJson.results, result => result.poster_path !== null && result.release_date !== "");
+
+          return Promise.resolve(Object.values(filtersMovie));
         };
-      })
+      });
   };
 };
 
