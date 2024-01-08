@@ -9,11 +9,13 @@ class GetDetailData {
     };
     return axios.get(`https://api.themoviedb.org/3/movie/${movie_id}`, options)
     .then(response => {
-      return response.data.genres;
+      const responseJson = response.data.genres;
+      let result = responseJson.map(({ name }) => name);
+
+      return Promise.resolve(result);
     })
     .catch(error => {
-      console.log(error.response.data.status_message);
-      console.log(error.message);
+      return Promise.reject(error.response.data.status_message);
     })
   };
 };

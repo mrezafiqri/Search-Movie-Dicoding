@@ -5,6 +5,7 @@ class MovieItem extends HTMLElement {
   }
 
   render() {
+    // const movieElement = this.querySelectorAll('#movieElement');
     this.innerHTML = `
       <a href="#" id="movieElement" class="relative flex flex-col rounded-md overflow-hidden border border-cyan-800 shadow-lg shadow-cyan-800 hover:shadow-xl hover:shadow-cyan-900 duration-300 group">
         <img src="https://image.tmdb.org/t/p/w500${this._movie.poster_path}" alt="" class="object-cover object-center group-hover:brightness-50 group-hover:blur-sm duration-300">
@@ -14,7 +15,16 @@ class MovieItem extends HTMLElement {
       </a>
     `;
 
-    this.querySelector('#movieElement').addEventListener('click', () => {
+    // const modalContainer = document.querySelector('#modal-container');
+
+    // movieElement.forEach((btn) => {
+    //   btn.addEventListener('click', (e) => {
+    //     modalContainer.classList.add('active');
+    //     e.preventDefault();
+    //   });
+    // });
+
+    this.querySelector('#movieElement').addEventListener('click', (e) => {
       const modalContainer = document.querySelector('#modal-container');
       modalContainer.classList.add('active');
     });
