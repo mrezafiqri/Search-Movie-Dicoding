@@ -1,6 +1,24 @@
 import axios from "axios";
 
 class GetData {
+
+  static showMovie() {
+    const options = {
+      params: {
+        api_key: "7823b0b12a3bfbb9b7425c65922beac5",
+        accept: "application/json"
+      }
+    };
+
+    return axios.get('https://api.themoviedb.org/3/movie/popular', options)
+    .then(response => {
+      return response.data;
+    })
+    .then(responseJson => {
+      return Promise.resolve(responseJson.results);
+    })
+  };
+
   static searchMovie(keyword) {
     const options = {
       params: {
