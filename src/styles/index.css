@@ -6,7 +6,7 @@
 
 body {
   @apply bg-primary;
-}
+};
 
 @layer components {
   .nav-search {
@@ -23,5 +23,17 @@ body {
 
   .modal.active {
     @apply visible;
+  };
+
+  .vote-green {
+    @apply text-green-400;
   }
-}
+
+  .vote-yellow {
+    @apply text-yellow-400;
+  }
+
+  .vote-red {
+    @apply text-red-500;
+  }
+};
