@@ -40,8 +40,8 @@ class MovieItem extends HTMLElement {
     });
 
     this.addEventListener('click', (e) => {
-      const modalCard = this.querySelector('#modal-card')
-      const movieELement = this.querySelector('#movieElement')
+      const modalCard = this.querySelector('#modal-card');
+      const movieELement = this.querySelector('#movieElement');
       const modalContainer =  this.querySelector('#modal-container');
       if (!modalCard.contains(e.target) && !movieELement.contains(e.target)) {
         modalContainer.classList.remove('active');

@@ -17,7 +17,7 @@ class MovieList extends HTMLElement {
     `;
 
     this._movies.forEach(movie => {
-      const movieContainer = document.querySelector('#movieContainer')
+      const movieContainer = document.querySelector('#movieContainer');
       const movieItemElement = document.createElement('movie-item');
       movieItemElement.movie = movie;
       movieContainer.appendChild(movieItemElement);

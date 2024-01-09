@@ -12,11 +12,11 @@ const main = async () => {
     try {
       const result = await GetData.searchMovie(searchMovieElement.value);
 
-      renderResult(result)
+      renderResult(result);
       
     } catch (message) {
-      fallbackResult(message)
-      console.log(message)
+      fallbackResult(message);
+      console.log(message);
     }
   };
 
